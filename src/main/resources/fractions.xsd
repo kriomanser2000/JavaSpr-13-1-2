@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/javaspr1312"
+           xmlns="http://example.com/javaspr1312" elementFormDefault="qualified">
+    <xs:element name="FractionOperationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numerator1" type="xs:int"/>
+                <xs:element name="denominator1" type="xs:int"/>
+                <xs:element name="numerator2" type="xs:int" minOccurs="0"/>
+                <xs:element name="denominator2" type="xs:int" minOccurs="0"/>
+                <xs:element name="operation" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="FractionOperationResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultNumerator" type="xs:int"/>
+                <xs:element name="resultDenominator" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
